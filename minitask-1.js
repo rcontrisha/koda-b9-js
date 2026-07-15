@@ -14,10 +14,10 @@ console.log(hello.world)
 
 // Soal Nomer 3
 const obj = {
-    str: ["", ["", "", ["", "", "", {koda: [{tech: {academy: "Koda Next Academy"}}]}]]]
+    str: ["", ["", "", ["", "", "", {koda: [{tech: {academy: "Koda Tech Academy"}}]}]]]
 }
 console.log(obj.str[1][2][3].koda[0].tech["academy"])
 
 // Soal Nomer 4
-const my = [{very: {best: ["", {sport: {is: "Footbal"}}]}}]
+const my = [{very: {best: ["", {sport: {is: "Football"}}]}}]
 console.log(my[0].very["best"][1].sport.is)
