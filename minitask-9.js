@@ -6,6 +6,11 @@ function processArray (arr, processor) {
         console.log('Input bukan array.')
         return
     }
+    
+    if (typeof processor !== 'function') {
+        console.log('Processor bukan function.')
+        return
+    }
 
     for (let i = 0; i < arr.length; i++) {
         const element = arr[i];
