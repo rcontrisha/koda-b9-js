@@ -3,13 +3,11 @@ function processArray (arr, processor) {
     const result = []
     
     if (!Array.isArray(arr)) {
-        console.log('Input bukan array.')
-        return
+        return `Input bukan array.`
     }
-    
+
     if (typeof processor !== 'function') {
-        console.log('Processor bukan function.')
-        return
+        return `Processor bukan function.`
     }
 
     for (let i = 0; i < arr.length; i++) {
