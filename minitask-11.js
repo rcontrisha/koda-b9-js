@@ -41,13 +41,13 @@ const printJane = () => {
 }
 
 // Menampilkan menggunakan async-await
-const printer = async () => {
+(async () => {
     console.log('Async-Await')
     console.log(await printJohn());
     console.log(await printEd());
     console.log(await printJane());
-}
-printer()
+})()
+// printer()
 
 // Menampilkan menggunakan chaining then-catch
 console.log('Chaining Then-Catch')
