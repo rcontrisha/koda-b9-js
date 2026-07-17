@@ -10,16 +10,15 @@ console.log(pets.includes('Monyet'))
 
 // Manual Case
 const checkIncludes = (keyword) => {
-    let isIncluded = false
-    
     for (let pet of pets) {
         if (pet === keyword) {
-            isIncluded = true
-            return `${keyword} included in pet list.`
+            return true
         }
     }
 
-    return `${keyword} not included (not found).`
+    return false
 }
 
+// console.log(pets)
 console.log(checkIncludes('Monyet'))
+// console.log(pets)
